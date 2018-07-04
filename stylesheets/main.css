@@ -1,0 +1,166 @@
+* {
+    /*outline: 1px solid black !important;*/
+    box-sizing: border-box;
+}
+body {
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.flex-container {
+    display: flex;
+}
+.flex-item {
+    flex-direction: column;
+}
+.flex-container .flex-item img {
+    max-width: 100%;
+}
+body>p, body>h1, body>h2, body>h3, body>a, section>p, section>h1, section>h2, section>h3 {
+    display: block;
+    text-align: center;
+}
+header>h1 {
+    text-align: center;
+}
+    
+nav>ul { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav>ul>li {
+    
+}
+nav>ul>li>a {
+    display: block;
+    margin: 0 10px;
+    text-align: center;
+    width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.list {
+    flex-wrap: wrap;
+    list-style: none inside;
+    padding: 0;
+    justify-content: center;
+}
+.list li {
+    width: 30%;
+    margin: 30px;
+}
+.list li img {
+    max-width: 100%;
+}
+.list span {
+    display: block;
+}
+.list+small {
+    padding: 1rem;
+}
+form.flex-container {
+    flex-wrap: wrap;
+}
+#orderform {
+    justify-content: center;
+}
+#orderform div label {
+    margin-right: 0.5rem;
+}
+#orderform div {
+    flex-wrap: wrap;
+}
+#loginform {
+    margin: 2rem auto 4rem;
+    padding: 2rem;
+    max-width: 500px;
+}
+section {
+    justify-content: center;
+}
+#registerform {
+    margin: 2rem;
+    border: 1px solid black;
+    max-width: 500px;
+    padding: 2rem;
+    flex-grow: 1;
+}
+#registerform span {
+    display: block;
+}
+#registerlink{
+    float: right;
+}
+#registerform input[type="submit"] {
+    float: right;
+}
+#admintable img {
+    max-width: 150px;
+}
+#admin {
+    margin: 1em 0;
+    text-align: center;
+}
+
+table, th, td, #admintable, #adminform {
+    border-collapse: collapse;
+    padding: 0.3rem;
+    font-style: normal;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+#adminpanel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.tall {
+    height: 60vh;
+}
+footer {
+    margin: 2rem 0 0;
+    border: 1px solid black;
+    text-align: right;
+    padding-right: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.clock {
+    align-items: center;
+}
+.clock input {
+    margin: 0 1rem 0;
+}
+
+
+@media screen and (max-width: 500px) {
+    .flex-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .flex-item {
+        
+    }
+    .list li {
+        width: 100%;
+        margin: 0 0 2rem;
+    }
+    nav>ul>li>a {
+        margin: 0;
+        width: 100%;
+    }
+    #orderform div {
+    flex-direction: row;
+    }
+    #orderform div input, #orderform div select {
+        flex-grow: 1;
+    } 
+}
